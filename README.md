@@ -1,16 +1,64 @@
-# React + Vite
+# Web Movies 🎬 (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web Movies is a simple React app built with **Vite** that shows **popular movies** using the **TMDb (The Movie Database) API**.  
+Movies are displayed as cards, and the app uses **React Router** for navigation.
 
-Currently, two official plugins are available:
+> This project is mainly for practicing React fundamentals: **components, props, state, useEffect, routing, and (optional) Context for favorites**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Fetch & display **Popular Movies** from TMDb
+- ✅ Movie cards with **poster, title, release year**
+- ✅ Navigation with **React Router**
+  - `/` → Home
+  - `/favorites` → Favorites page
+- ✅ Clean component-based UI (props + reusable components)
+- 🚧 Search feature (UI exists, you can wire it to API)
+- 🚧 Favorites feature (button/UI exists, you can complete with Context + LocalStorage)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+- **React** (Vite)
+- **React Router DOM**
+- **TMDb API**
+- CSS (custom)
+
+---
+
+## 🚀 Getting Started
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/Nafis-Rohan/Web-Movies.git
+cd Web-Movies
+```
+
+### 2) Install dependencies
+
+```bash
+npm install
+```
+
+### 3) Create .env (project root)
+
+Create a file named .env beside package.json and add: 'VITE_TMDB_API_KEY=YOUR_TMDB_API_KEY'
+
+### 4) Run the project
+
+```bash
+npm run dev
+```
+
+## 🔐 Protect Your API Key (Important)
+
+Add this to your `.gitignore` so your key never goes to GitHub:
+
+```gitignore
+.env
+.env.*
+```
